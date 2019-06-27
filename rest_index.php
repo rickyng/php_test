@@ -14,9 +14,12 @@ $tblName = 'master2';
 
 
 
-$url = 'http://127.0.0.1:8080/php_test/order/read.php';
+$url = 'http://127.0.0.1/php_test/order/read.php';
+
 
 $result = file_get_contents( $url );
+
+
 $arrays = json_decode($result, true);
 $users = $arrays['records'];
 //var_dump($users);
